@@ -8,6 +8,8 @@ from apps.products import views
 router = DefaultRouter()
 
 router.register('categories', views.CategoryViewSet, basename='categories')
+router.register('brands', views.BrandViewSet, basename='brands')
+router.register('products', views.ProductViewSet, basename='products')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
